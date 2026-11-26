@@ -1,0 +1,16 @@
+[package]
+name = "bnm"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "A better NetworkManager TUI with Wi-Fi QR sharing"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+qrcode = { version = "0.15.0", default-features = false, features = ["std"] }
+ratatui = { version = "0.30.2", default-features = false, features = ["crossterm"] }
+unicode-width = "0.2.3"
+
+[lints.rust]
+unsafe_code = "forbid"
